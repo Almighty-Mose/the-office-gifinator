@@ -1,5 +1,5 @@
 class GifController < ApplicationController
-  def home
-    @gifs = Gif.all
+  def index
+    
   end
 end
