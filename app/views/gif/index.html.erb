@@ -2,3 +2,10 @@
 
 <input type="text" placeholder="Search for GIFs!" />
 
+<div id="gif-wrapper">
+  <% @body.each do |gif| %>
+    <ul>
+      <li><%= gif['title'] %></li>
+    </ul>
+  <% end %>
+</div>
