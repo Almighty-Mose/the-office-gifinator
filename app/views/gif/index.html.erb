@@ -4,8 +4,6 @@
 
 <div id="gif-wrapper">
   <% @body.each do |gif| %>
-    <ul>
-      <li><%= gif['title'] %></li>
-    </ul>
+    <img src="<%= gif['images']['original']['url'] %>" alt="<%= gif['title'] %>" />
   <% end %>
 </div>
