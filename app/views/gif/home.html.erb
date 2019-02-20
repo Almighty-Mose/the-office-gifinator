@@ -1,0 +1,9 @@
+<h1>The Office Gifinator</h1>
+
+<input type="text" placeholder="Search for GIFs!" />
+
+<% @gifs.each do |gif| %>
+  <ul>
+    <li><%= gif.title %></li>
+  </ul>
+<% end %>
